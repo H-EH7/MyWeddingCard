@@ -1,8 +1,39 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+﻿<div class="main-img">
+    <img src="~/img/20230717-R6__0897-page.jpg" />
+</div>
+<div class="contents-container">
+    <div class="wise-saying-container">
+        <div class="wise-saying-box">
+            <div class="wise-saying">
+                <div>Love is putting someone else's needs before yours.</div>
+                <div>사랑은 너 자신보다 사랑하는 사람이 필요한 것을 채워주는 거야.</div>
+            </div>
+        </div>
+    </div>
+    <div class="postcard-container">
+        <div class="postcard">
+            <h2>대단히 감사합니다.</h2>
+            <div> 응가쟁이 이현택</div>
+            <div>방구쟁이 박채림</div>
+        </div>
+    </div>
+    <div class="gallery-container">
+        <img id="selectedImage" src="~/img/20230717-R5__0261.jpg"/>
+        <div class="img-slider">
+            @for (int i = 0; i < 10; i++)
+            {
+                <img class="thumbnail" src="~/img/20230717-R5__0261.jpg"/>
+            }
+        </div>
+    </div>
+    <div class="button-container">
+        <button>위치</button>
+        <button>계좌</button>
+        <button>연락처</button>
+    </div>
+    <div class="guest-book-container">
+        <div id="guestBook">
+            방명록
+        </div>
+    </div>
 </div>
