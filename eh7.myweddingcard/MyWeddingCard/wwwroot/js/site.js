@@ -13,6 +13,7 @@ function init() {
 
 function initButtons() {
     $('.main-img').click(openCard);
+    $('.btnDelete').click(deletePost);
 }
 
 function openCard() {
@@ -24,6 +25,11 @@ function openCard() {
     $('body').animate({ 'backgroundColor': '#ffffff' }, 800);
 
     $('body').css('overflow', 'visible');
+}
+
+function deletePost() {
+    console.log('Delete Post!');
+    // 포스트 삭제 확인 팝업
 }
 
 function scrollAction() {

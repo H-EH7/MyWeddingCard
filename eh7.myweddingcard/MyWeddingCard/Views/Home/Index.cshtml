@@ -33,7 +33,24 @@
     </div>
     <div class="guest-book-container">
         <div id="guestBook">
-            방명록
+            @*편지*@
+            @for (var i = 0; i < 5; i++)
+            {
+            <div class="post-card">
+                <div class="header">
+                    <span class="writer">
+                        작성자
+                    </span>
+                    <button class="btnDelete">X</button>
+                </div>
+                <div class="contents">
+                    안녕하세요. 방명록 작성자입니다. 계속해서 써내려가보겠습니다. 어디까지 가능할지 모르겠네요. 쓸 말이 생각이 나지 않아 그만쓰렵니다.
+                </div>
+                <div class="date">
+                    2024.01.30 10:14
+                </div>
+            </div>
+            }
         </div>
     </div>
 </div>
